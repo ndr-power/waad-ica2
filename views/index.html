@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Q&A App</title>
+    
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id = "body">
+    <header id="header">
+        <div class="overlay">
+            <a href="#home"><h1>Q&A App</h1></a>
+                <br>
+            <div>
+                <div>
+                    <a href="#new_quest_form"><button>ADD NEW QUESTION</button></a>
+                </div>
+                <div>
+                    <a href="#questions_section"><button>VIEW QUESTIONS</button></a>
+                </div>
+            </div>
+    </header>
+
+    <main id="app">
+        <section id="new_quest_form">
+            <form  class="decor" id="addNewQuestionForm">
+                <div class="form-left-decoration"></div>
+                <div class="form-right-decoration"></div>
+                <div class="circle"></div>
+                <div class="form-inner" >
+                    <h1>Add new question</h1>
+                    <textarea id="question" placeholder="Your question..." rows="5"></textarea>
+                    <div id ="input_container">
+                        <input class="answer-input" type="text" placeholder="Your answer...">
+                        <input class="answer-input" type="text" placeholder="Your answer...">
+                    </div>
+                    <!-- <button type="submit" type="submit" value="Submit" onclick="addNewQuestion()">Submit</button> -->
+                </div>
+                <div class="button-group">
+                    <button type="submit" value="Submit" onclick="addNewQuestion()">Submit</button>
+                    <button id="new_field" type = "button" onclick="addAnswerField()">Add answer field</button>
+                </div>
+            </form>
+        </section>
+        
+        <section id="questions_section" class="questions-section">
+            
+            <div class="question-container">
+                <div class="form-left-decoration"></div>
+                <div class="form-right-decoration"></div>
+                <div class="circle"></div>
+                <h1>Reply questions</h1>
+                <div id= "question_list"></div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="js/addNewQuestion.js"></script>
+  </body>
+  
+</html>
+

@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Q&A App</title>
+    <link rel="stylesheet" href="/css/singleQ&A.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  </head>
+
+  <body id = "body">
+      
+    <header id="header">
+        <div class="overlay">
+            <a href="/"><h1>Q&A App</h1></a>
+                <br>
+            <div>
+                <div>
+                    <a href="/"><button>ADD NEW QUESTION</button></a>
+                </div>
+                <div>
+                    <a href="/"><button>VIEW QUESTIONS</button></a>
+                </div>
+            </div>
+    </header>
+
+    <main id="app">
+      <section>
+        <div class="quiz-container" id="quiz">
+          <div class="form-left-decoration"></div>
+          <div class="form-right-decoration"></div>
+          <div class="circle"></div>
+          <div class="quiz-content">
+            <h1 id="question"></h1>
+            <ul id ="answers-list">
+              
+            </ul>
+          </div>
+          <div class="button-group">
+            <button id="submit" onclick = "setSingleVote()">Submit</button>
+            <button id="show_results" onclick="showResults()">Show results</button>
+            <button id="delete_btn" onclick="deleteQuestion()">Delete question</button>
+          </div>
+
+          
+
+        </div>
+      </section>
+    </main>
+    <script src="/js/singleQuest.js"></script>
+  </body>
+  
+</html>
+
+
+<!-- <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div> -->
