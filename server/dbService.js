@@ -60,7 +60,6 @@ class DbService {
 					resolve(results);
 				});
 			});
-			console.log(response);
 			return response;
 		} catch (error) {
 			console.log(error);
@@ -97,7 +96,6 @@ class DbService {
 					resolve(results);
 				});
 			});
-			console.log(response);
 			return response;
 		} catch (err) {
 			console.log(err);
@@ -137,10 +135,8 @@ class DbService {
 							resolve(res1);
 						});
 					}
-					console.log(results.length);
 				});
 			});
-			console.log(response);
 			return response;
 		} catch (err) {
 			console.log(err);
@@ -161,7 +157,6 @@ class DbService {
 					resolve(results);
 				});
 			});
-			console.log(response);
 			return response;
 		} catch (error) {
 			console.log(error);
@@ -197,7 +192,6 @@ class DbService {
 					}
 				);
 			});
-			console.log(response);
 			return response;
 		} catch (error) {
 			console.log(error);

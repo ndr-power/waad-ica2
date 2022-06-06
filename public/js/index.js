@@ -58,7 +58,6 @@ const generateQuestionStructure = (question, questID) => {
 
 // update user interface with new info
 const updateUI = (questionArr) => {
-	console.log(questionArr);
 	let questionList = document.getElementById('question_list');
 	let output = [];
 

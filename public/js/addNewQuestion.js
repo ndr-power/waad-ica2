@@ -26,8 +26,6 @@ const addNewQuestion = () => {
 			answers: answerInputsValues,
 		};
 
-		console.log(newQuestion);
-
 		fetch('http://localhost:3001/api/postNew', {
 			method: 'POST',
 			headers: {
